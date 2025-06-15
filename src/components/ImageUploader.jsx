@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./thinker.css";
 
+
 export default function ImageUploader() {
   const [image, setImage] = useState(null);
 
@@ -12,29 +13,29 @@ export default function ImageUploader() {
   };
 
   return (
-    <div className="bg-white-100 p-5 rounded-lg shadow-md boxshadow-2 my-8">
-      <h2 className="text-2xl font-semibold mb-4 text-center shoadowytxt-2 googlefonts2">
-        Upload an Image
+    <div className="darktheme p-6 rounded-lg boxshadow-3 max-w-3xl mx-auto mt-10 border border-gray-300 border-r-2 ">
+      <h2 className="centertext fsize-28 mb-5  googlefonts2 shoadowytxt-2 tblue-200 fsize-32">
+        Upload Image
       </h2>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-        <input
-          type="file"
-          accept="image/*"
-          onChange={handleChange}
-          className="block text-sm text-gray-500 file:mr-4 file:py-2 file:px-4
-            file:rounded-full file:border-0
-            file:text-sm file:font-semibold
-            file:bg-purple-100 file:text-white
-            hover:file:bg-purple-300 transition"
-        />
+        <label className="cursor-pointer torange-100 fsize-20 border-2 border-purple-200 px-5 py-2 rounded-lg hover:bg-purple-300 hover:twhite-100 transition family-2">
+          Select File
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handleChange}
+            className="hidden"
+          />
+        </label>
 
         {image && (
-          <div className="max-w-xs w-full boxshadow mt-4 sm:mt-0">
+          <div className="mt-6 sm:mt-0 w-full sm:w-80 border border-gray-200 rounded-lg overflow-hidden">
             <img
               src={image}
               alt="Preview"
-              className="rounded-lg w-full h-auto object-cover border border-gray-200"
+              className="w-full object-cover rounded-lg"
+              style={{ maxHeight: "300px" }}
             />
           </div>
         )}

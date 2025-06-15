@@ -1,25 +1,25 @@
 import React from "react";
-import "./thinker.css"
+import "./thinker.css";
 
-function Footer(){
-      return (
-    <footer className="w-full bg-black-100 p-4 mt-10 boxshadow-1">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
-        <p className="text-white fsize-16 i family-1 shoadowytxt-1">
-          © 2025 AutoAlt — Built with ❤️ for accessibility
+function Footer() {
+  return (
+    <footer className="w-full bg-black-200 py-6 mt-10 boxshadow-4">
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center px-6">
+        <p className="twhite-100 fsize-16 i family-2 shoadowytxt-2 text-center sm:text-left">
+          © 2025 AutoAlt — Empowering accessibility with AI ✨
         </p>
-        <div className="flex space-x-4 mt-2 sm:mt-0">
+        <div className="flex space-x-6 mt-4 sm:mt-0">
           <a
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-yellow-200 transition fsize-14 family-2"
+            className="twhite-100 hover:underline transition fsize-16"
           >
             GitHub
           </a>
           <a
             href="#"
-            className="text-white hover:text-yellow-200 transition fsize-14 family-2"
+            className="twhite-100 hover:underline transition fsize-16"
           >
             Contact
           </a>
@@ -28,4 +28,5 @@ function Footer(){
     </footer>
   );
 }
+
 export default Footer;

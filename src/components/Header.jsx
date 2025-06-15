@@ -1,6 +1,5 @@
 import React from "react" 
 import "./thinker.css"
-
 function Header(){
     return(
         <>

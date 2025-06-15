@@ -1,0 +1,32 @@
+import os
+os.environ["TRANSFORMERS_NO_TF"] = "1"  # Force PyTorch backend
+
+from flask import Flask, request, jsonify
+from transformers import pipeline
+from PIL import Image
+import base64
+import io
+
+app = Flask(__name__)
+
+# Do NOT load model here
+
+@app.route("/generate-alt", methods=["POST"])
+def generate_alt():
+    global pipe
+    data = request.get_json()
+
+    try:
+        image_data = base64.b64decode(data["image"])
+        image = Image.open(io.BytesIO(image_data)).convert("RGB")
+        result = pipe(image)
+        caption = result[0]["generated_text"]
+        return jsonify({"alt_text": caption})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+if __name__ == "__main__":
+    print("⏳ Loading model... please wait")
+    pipe = pipeline("image-to-text", model="nlpconnect/vit-gpt2-image-captioning")
+    print("✅ Model loaded successfully")
+    app.run(debug=True, port=5000, use_reloader=False)

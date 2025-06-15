@@ -1,0 +1,301 @@
+body{
+    font-size: 22px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+.nospace{
+    margin: 0% 0;
+}
+
+/* Shadow */
+.shoadowytxt {text-shadow: 1px 1px 1px black;}
+.shoadowytxt-1{text-shadow: 1px 1px 2px black;}
+.shoadowytxt-2 {text-shadow: 1px 2px 3px black;}
+.shoadowytxt-3 {text-shadow: 4px 3px 5px black;}
+.shoadowytxt-4 {text-shadow: 0px 19px 2px black;}
+.shoadowytxt-5 {text-shadow: 1px 15px 1px black;}
+.shoadowytxt-6 {text-shadow: 3px 8px 10px black;}
+
+.boxshadow{box-shadow: 4px 4px 10px gray;}
+.boxshadow-1{box-shadow: 14px 40px 10px gray;}
+.boxshadow-2{box-shadow: 4px 5px 60px gray;}
+.boxshadow-3{box-shadow: 40px 0px 40px rgb(0, 0, 0);}
+.boxshadow-4{box-shadow: 14px 14px 50px rgb(0, 0, 0);}
+.boxshadow-5{box-shadow: px 40px 10px rgb(141, 54, 54);}
+
+/* Light theme */
+.lightheme{background-color: rgb(222, 227, 231);}
+
+/* Dark theme */
+.darktheme{background-color: #181215;}
+
+/*  full width and height */
+.fullwidth{width: 100vw;}
+.fullheight{height: 100vh;}
+
+/* Paddding */
+.p-0 { padding: 0; }
+.p-1 { padding: 10px; }
+.p-2 { padding: 20px; }
+.p-3 { padding: 30px; }
+.p-4 { padding: 40px; }
+.p-5 { padding: 50px; }
+.p-6 { padding: 60px; }
+.p-7 { padding: 70px; }
+.p-8 { padding: 80px; }
+.p-9 { padding: 90px; }
+.p-10 { padding: 100px; }
+.p-11 { padding: 110px; }
+.p-12 { padding: 120px; }
+.p-13 { padding: 130px; }
+.p-14 { padding: 140px; }
+.p-15 { padding: 150px; }
+
+/* Margin */
+.m-0  { margin: 0; }
+.m-1  { margin: 10px; }
+.m-2  { margin: 20px; }
+.m-3  { margin: 30px; }
+.m-4  { margin: 40px; }
+.m-5  { margin: 50px; }
+.m-6  { margin: 60px; }
+.m-7  { margin: 70px; }
+.m-8  { margin: 80px; }
+.m-9  { margin: 90px; }
+.m-10 { margin: 100px; }
+.m-11 { margin: 110px; }
+.m-12 { margin: 120px; }
+.m-13 { margin: 130px; }
+.m-14 { margin: 140px; }
+.m-15 { margin: 150px; }
+
+/* bg colors */
+.red-100{background-color: rgb(193, 56, 56);}
+.red-200{background-color: rgb(146, 20, 20);}
+.red-300{background-color: rgb(102, 10, 10);}
+.red-400{background-color: rgb(150, 2, 2);}
+
+.yellow-100{background-color: rgb(236, 236, 77);}
+.yellow-200{background-color: rgb(181, 181, 41);}
+.yellow-300{background-color: rgb(140, 140, 18);}
+.yellow-400{background-color: rgb(160, 160, 0);}
+
+.gren-100{background-color: rgb(99, 228, 99);}
+.gren-200{background-color: rgb(53, 183, 53);}
+.gren-300{background-color: rgb(17, 137, 17);}
+.gren-400{background-color: rgb(1, 101, 1);}
+
+.blue-100{background-color: rgb(94, 94, 209);}
+.blue-200{background-color: rgb(51, 51, 173);}
+.blue-300{background-color: rgb(21, 21, 152);}
+.blue-400{background-color: rgb(1, 1, 110);}
+
+.gray-100{background-color: rgb(158, 154, 154);}
+.gray-200{background-color: gray;}
+.gray-300{background-color: rgb(84, 83, 83);}
+.gray-400{background-color: rgb(49, 48, 48);}
+
+.white-100{background-color: white;}
+.white-200{background-color: rgb(186, 181, 181);}
+.white-300{background-color: rgb(194, 176, 176);}
+.white-400{background-color: rgb(116, 116, 116);}
+
+.black-100{background-color: black;}
+.black-200{background-color: rgb(15, 1, 1);}
+.black-300{background-color: rgb(1, 7, 0);}
+.black-400{background-color: rgb(1, 4, 23);}
+
+.orange-100{background-color: orange;}
+.orange-200{background-color: rgba(221, 150, 17, 0.87);}
+.orange-300{background-color: rgba(160, 106, 5, 0.896);}
+.orange-400{background-color: rgb(163, 107, 2);}
+
+.purple-100{background-color: purple;}
+.purple-200{background-color: rgb(129, 11, 129);}
+.purple-250{background-color: rgba(82, 3, 82, 0.758);}
+.purple-300{background-color: rgb(239, 82, 239);}
+.purple-400{background-color: rgb(173, 59, 173);}
+
+.aqua-100{background-color: aqua;}
+.aqua-200{background-color: rgba(19, 208, 208, 0.925);}
+.aqua-300{background-color: rgb(3, 75, 75);}
+.aqua-400{background-color: rgba(28, 176, 176, 0.878);}
+
+
+/* txt colors */
+
+
+.tred-100{color: rgb(193, 56, 56);}
+.tred-200{color: rgb(146, 20, 20);}
+.tred-300{color: rgb(102, 10, 10);}
+.tred-400{color: rgb(150, 2, 2);}
+
+.tyellow-100{color: rgb(236, 236, 77);}
+.tyellow-200{color: rgb(181, 181, 41);}
+.tyellow-300{color: rgb(140, 140, 18);}
+.tyellow-400{color: rgb(160, 160, 0);}
+
+.tgren-100{color: rgb(99, 228, 99);}
+.tgren-200{color: rgb(53, 183, 53);}
+.tgren-300{color: rgb(17, 137, 17);}
+.tgren-400{color: rgb(1, 101, 1);}
+
+.tblue-100{color: rgb(94, 94, 209);}
+.tblue-200{color: rgb(51, 51, 173);}
+.tblue-300{color: rgb(21, 21, 152);}
+.tblue-400{color: rgb(1, 1, 110);}
+
+.tgray-100{color: rgb(158, 154, 154);}
+.tgray-200{color: gray;}
+.tgray-300{color: rgb(84, 83, 83);}
+.tgray-400{color: rgb(49, 48, 48);}
+
+.twhite-100{color: white;}
+.twhite-200{color: rgb(186, 181, 181);}
+.twhite-300{color: rgb(194, 176, 176);}
+.twhite-400{color: rgb(116, 116, 116);}
+
+.tblack-100{color: black;}
+.tblack-200{color: rgb(15, 1, 1);}
+.tblack-300{color: rgb(1, 7, 0);}
+.tblack-400{color: rgb(1, 4, 23);}
+
+.torange-100{color: orange;}
+.torange-200{color: rgba(221, 150, 17, 0.87);}
+.torange-300{color: rgba(160, 106, 5, 0.896);}
+.torange-400{color: rgb(163, 107, 2);}
+
+.tpurple-100{color: purple;}
+.tpurple-200{color: rgb(129, 11, 129);}
+.tpurple-250{color: rgba(82, 3, 82, 0.758);}
+.tpurple-300{color: rgb(239, 82, 239);}
+.tpurple-400{color: rgb(173, 59, 173);}
+
+.taqua-100{color: aqua;}
+.taqua-200{color: rgba(19, 208, 208, 0.925);}
+.taqua-300{color: rgb(3, 75, 75);}
+.taqua-400{color: rgba(28, 176, 176, 0.878);}
+
+/* Make your div tag at center */
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   /* Zoom  */
+.zoom-1 { transform: scale(1.2); }      /* Default size (20% bigger) */
+.zoom-2 { transform: scale(1.4); }      /* 40% bigger */
+.zoom-3 { transform: scale(1.5); }      /* 50% bigger */
+.zoom-4 { transform: scale(1.6); }      /* 60% bigger */
+.zoom-5 { transform: scale(2.0); }      /* 100% bigger */
+.zoom-6 { transform: scale(50); }      
+.zoom-7 { transform: scale(100); }      /* 100% bigger */
+
+
+/* flip:-  Flips the element horizontally (mirror effect); works on boxes, text, images, etc. */
+.flip {transform: scale(-1);}
+/* Flip and zoom */
+.flipnzoom-1{transform: scale(-1.2);}
+.flipnzoom-2{transform: scale(-1.3);}
+.flipnzoom-3{transform: scale(-1.4);}
+.flipnzoom-4{transform: scale(-1.5);}
+.flipnzoom-5{transform: scale(-2.0);}
+.flipnzoom-6{transform: scale(-50);}
+.flipnzoom-7{transform: scale(-100);}
+
+/* fontstyle */
+.i{font-style: italic;}
+.o{font-style: oblique;}
+
+/* Font family */
+.family-0{font-family: 'Courier New', Courier, monospace;}
+.family-1{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.family-2{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.family-3{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.family-4{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.family-5{font-family: 'Times New Roman', Times, serif;}
+.family-6{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.family-7{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+/* Special font-family */
+
+button-1{
+    cursor: pointer;
+    background-color: #181215;
+    padding: 8px;
+    margin: 7px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    align-self: center;
+    text-align: center;
+    place-self: center;
+}
+button-1:hover{
+    background-color: silver;
+    color: #0a0a0a;
+}
+
+/* font families */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Manrope:wght@200..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Google fonts */
+
+.googlefonts{
+  font-family: "Poppins";
+  font-weight: 100;
+  font-style: normal;
+}
+.googlefonts2{
+    font-family: "Poppins", Impact, 'Arial Narrow Bold',;
+    font-weight: 800;
+    font-size: larger;
+    font-style: italic;
+    text-shadow: 1PX 2PX 30PX #0a0a0a;
+}
+
+/* fontsize */
+.fsize-12{font-size: 12px;}
+.fsize-14{font-size: 14px;}
+.fsize-16{font-size: 16px;}
+.fsize-18{font-size: 18px;}
+.fsize-20{font-size: 20px;}
+.fsize-22{font-size: 22px;}
+.fsize-24{font-size: 24px;}
+.fsize-26{font-size: 26px;}
+.fsize-28{font-size: 28px;}
+.fsize-30{font-size: 30px;}
+.fsize-32{font-size: 32px;}
+.fsize-34{font-size: 34px;}
+.fsize-36{font-size: 36px;}
+.fsize-38{font-size: 38px;}
+.fsize-40{font-size: 40px;}
+.fsize-42{font-size: 42px;}
+.fsize-44{font-size: 44px;}
+.fsize-46{font-size: 46px;}
+.fsize-48{font-size: 48px;}
+.fsize-50{font-size: 50px;}
+.fsize-60{font-size: 60px;}
+.fsize-62{font-size: 62px;}
+.fsize-64{font-size: 64px;}
+.fsize-66{font-size: 66px;}
+.fsize-68{font-size: 68px;}
+.fsize-70{font-size: 70px;}
+.fsize-80{font-size: 80px;}
+.fsize-90{font-size: 90px;}
+.fsize-100{font-size: 100px;}
+
+/* Body class */
+
+.body-1{ background-color: rgb(255, 213, 213);box-shadow: 4px 15px 2px  black;}
+.body-2{ background-color: rgb(75, 51, 51);box-shadow: 4px 15px 2px  black;}
+.body-3{ background-color: rgb(18, 168, 86);box-shadow: 4px 15px 2px  black;}
+.body-4{ background-color: rgb(15, 128, 208);box-shadow: 4px 15px 2px  black;}
+.body-5{ background-color: rgb(48, 242, 129);box-shadow: 4px 15px 2px  black;}
+.body-6{ background-color: rgb(192, 0, 192);box-shadow: 4px 15px 2px  black;}
+
+/* center text */
+
+.centertext {text-align: center;}
+/* main  */

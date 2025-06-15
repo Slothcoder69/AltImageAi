@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AltImageAi - Developer Documentation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4b0082;
+      color: white;
+      padding: 20px 30px;
+      text-shadow: 1px 1px 2px black;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .section {
+      padding: 20px 30px;
+      border-bottom: 1px solid #ddd;
+    }
+    .section h2 {
+      margin-top: 0;
+      color: #4b0082;
+    }
+    pre {
+      background: #222;
+      color: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    ul {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛠️ AltImageAi Developer Documentation</h1>
+    <p>Build | Contribute | Debug | Deploy</p>
+  </header>
+
+  <div class="section">
+    <h2>📌 Project Goal</h2>
+    <p>
+      AltImageAi is a web tool that uses AI to generate alt text for images, helping make the web more accessible. It's built using React, TailwindCSS, and deployed via GitHub Pages.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>📁 File Structure</h2>
+    <pre><code>src/
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── ImageUploader.jsx
+│   └── AltTextDisplay.jsx
+├── pages/
+│   └── Home.jsx
+├── App.jsx
+├── main.jsx
+└── thinker.css</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>🔃 Component Flow</h2>
+    <ul>
+      <li>User uploads image → preview is shown</li>
+      <li>Alt text is generated (mock or AI later)</li>
+      <li>Displayed in <code>AltTextDisplay.jsx</code></li>
+      <li>State passed via props or lifted to Home.jsx</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🧪 Dev Setup</h2>
+    <pre><code>git clone https://github.com/Slothcoder69/AltImageAi.git
+cd AltImageAi
+npm install
+npm run dev</code></pre>
+  </div>
+
+  <div class="section">
+    <h2>🚀 Deployment</h2>
+    <ul>
+      <li>Set <code>homepage</code> in package.json</li>
+      <li>Update <code>vite.config.js</code> with <code>base: '/AltImageAi/'</code></li>
+      <li>Run: <code>npm run deploy</code></li>
+    </ul>
+    <p>Live URL: <code>https://Slothcoder69.github.io/AltImageAi</code></p>
+  </div>
+
+  <div class="section">
+    <h2>📌 Todos</h2>
+    <ul>
+      <li>Integrate AI model (HuggingFace)</li>
+      <li>Add drag-and-drop upload</li>
+      <li>Copy alt-text to clipboard feature</li>
+    </ul>
+  </div>
+
+</body>
+</html>

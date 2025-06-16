@@ -1,0 +1,167 @@
+/* ========== LAZY.CSS - Modern Vibrant UI Style ========== */
+
+/* --- Color Utilities --- */
+.text-white     { color: #ffffff; }
+.text-black     { color: #000000; }
+.text-neon      { color: #39ff14; }
+.text-pink      { color: #ff3cac; }
+.text-cyan      { color: #00ffff; }
+.text-purple    { color: #9c27b0; }
+.text-lightblue { color: #00bcd4; }
+.text-silver    { color: #cfd8dc; }
+
+/* --- Background Utilities --- */
+.bg-dark        { background-color: #121212; }
+.bg-light       { background-color: #f5f5f5; }
+.bg-purple      { background-color: #6a1b9a; }
+.bg-gradient-1  {
+  background: linear-gradient(135deg, #ff6ec4 0%, #7873f5 100%);
+}
+.bg-gradient-2  {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+.bg-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* --- Button Styles --- */
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-primary {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+.btn-primary:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+.btn-glow {
+  background: #111;
+  color: #0ff;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+.btn-glow:hover {
+  background: #0ff;
+  color: #111;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+/* --- Card Style --- */
+.card {
+  background: #1e1e2f;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Glassmorphism Card --- */
+.card-glass {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  color: #ffffff;
+}
+
+/* --- Shadow Utility --- */
+.shadow-soft {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.shadow-neon {
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+.shadow-purple {
+  box-shadow: 0 0 12px #9c27b0, 0 0 24px #9c27b0;
+}
+
+/* --- Responsive Containers --- */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Typography --- */
+.heading-xl {
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+.heading-glow {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+.text-gradient {
+  background: linear-gradient(to right, #ff3cac, #784ba0, #2b86c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* non-webkit fallback */
+  color: transparent;
+  display: inline-block; /* <- important for it to render correctly */
+}
+
+
+/* --- Input Styles --- */
+.input {
+  background: #2c2c3e;
+  border: 1px solid #555;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+.input:focus {
+  border-color: #00c6ff;
+  outline: none;
+  box-shadow: 0 0 10px #00c6ff;
+}
+
+/* ... (more utility classes continue below) */
+
+/* === End of Snippet (over 250 lines total in full version) === */
+.fsize-16 {
+  font-size: 16px;
+}
+/* Default layout — horizontal by default */
+.smallscreen {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Override on small screens */
+@media (max-width: 640px) {
+  .smallscreen {
+    flex-direction: column !important;
+  }
+}

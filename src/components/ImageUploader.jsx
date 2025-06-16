@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./thinker.css";
-
+import "./lazy.css";
 
 export default function ImageUploader() {
   const [image, setImage] = useState(null);
@@ -13,13 +13,14 @@ export default function ImageUploader() {
   };
 
   return (
-    <div className="darktheme p-6 rounded-lg boxshadow-3 max-w-3xl mx-auto mt-10 border border-gray-300 border-r-2 ">
-      <h2 className="centertext fsize-28 mb-5  googlefonts2 shoadowytxt-2 tblue-200 fsize-32">
-        Upload Image
-      </h2>
+    <div className="card-glass max-w-3xl mx-auto mt-12 p-8 shadow-neon border border-cyan-500 rounded-xl">
+  <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8 drop-shadow-md">
+  Upload Image
+</h2>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-        <label className="cursor-pointer torange-100 fsize-20 border-2 border-purple-200 px-5 py-2 rounded-lg hover:bg-purple-300 hover:twhite-100 transition family-2">
+
+      <div className="flex flex-col sm:flex-row gap-8 items-center justify-center">
+        <label className="btn-glow cursor-pointer px-6 py-3 rounded-lg text-white family-2 fsize-20">
           Select File
           <input
             type="file"
@@ -30,7 +31,7 @@ export default function ImageUploader() {
         </label>
 
         {image && (
-          <div className="mt-6 sm:mt-0 w-full sm:w-80 border border-gray-200 rounded-lg overflow-hidden">
+          <div className="border border-gray-500 rounded-lg overflow-hidden w-full sm:w-80 shadow-soft">
             <img
               src={image}
               alt="Preview"

@@ -11,7 +11,7 @@ body{
 /* Shadow */
 .shoadowytxt {text-shadow: 1px 1px 1px black;}
 .shoadowytxt-1{text-shadow: 1px 1px 2px black;}
-.shoadowytxt-2 {text-shadow: 1px 2px 3px black;}
+.shoadowytxt-2 {text-shadow: 1px 2px 3px rgb(0, 223, 223);}
 .shoadowytxt-3 {text-shadow: 4px 3px 5px black;}
 .shoadowytxt-4 {text-shadow: 0px 19px 2px black;}
 .shoadowytxt-5 {text-shadow: 1px 15px 1px black;}
@@ -20,7 +20,7 @@ body{
 .boxshadow{box-shadow: 4px 4px 10px gray;}
 .boxshadow-1{box-shadow: 14px 40px 10px gray;}
 .boxshadow-2{box-shadow: 4px 5px 60px gray;}
-.boxshadow-3{box-shadow: 40px 0px 40px rgb(0, 0, 0);}
+.boxshadow-3{box-shadow: 40px 2px 40px rgb(16, 91, 190);}
 .boxshadow-4{box-shadow: 14px 14px 50px rgb(0, 0, 0);}
 .boxshadow-5{box-shadow: px 40px 10px rgb(141, 54, 54);}
 

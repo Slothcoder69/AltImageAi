@@ -1,11 +1,16 @@
-const handleImageUpload = async (base64Image) => {
-  setIsLoading(true);
-  try {
-    const altText = await getAltText(base64Image);
-    setGeneratedAltText(altText);
-  } catch (err) {
-    console.error("Error generating alt text:", err);
-  } finally {
-    setIsLoading(false);
+export const getAltText = async (base64Image) => {
+  const response = await fetch("http://127.0.0.1:5000/generate-alt", {  // FIXED URL
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ image: base64Image }),
+  });
+
+  const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data.error || "Failed to get alt text");
   }
+
+  return data.alt_text;
 };

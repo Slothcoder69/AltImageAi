@@ -165,3 +165,18 @@
     flex-direction: column !important;
   }
 }
+@keyframes slowPan {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slow-drift-bg {
+  animation: slowPan 50s ease-in-out infinite;
+}

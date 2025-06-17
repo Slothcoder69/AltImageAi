@@ -1,0 +1,29 @@
+body{
+    background-image: url("./altimagebg.png");
+}
+
+@keyframes bgPulseAndShift {
+  0% {
+    transform: translateX(10px);
+    filter: brightness(1);
+  }
+  50% {
+    transform: translateX(0px);
+    filter: brightness(1.1);
+  }
+  100% {
+    transform: translateX(0);
+    filter: brightness(1);
+  }
+}
+
+.home-bg {
+  background-image: url('./altimagebg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  /* Wrap inside a container to avoid shifting whole screen */
+  animation: bgPulseAndShift 15s ease-in-out infinite;
+  will-change: transform;
+}
